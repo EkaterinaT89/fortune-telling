@@ -10,5 +10,5 @@
     <string name="yes_no_label">Гадание да/нет</string>
     <string name="dice_label">Бросить кубик</string>
     <string name="runas_label">Гадание на рунах</string>
-    <string name="irst_label">Гадания</string>
+    <string name="first_label">Гадания</string>
 </resources>
