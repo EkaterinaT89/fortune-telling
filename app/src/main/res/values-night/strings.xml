@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_button" />
+    <string name="yes_no">ГАДАНИЕ ДА/НЕТ</string>
+    <string name="dice">БРОСИТЬ КУБИК</string>
+    <string name="push">ПУСК!</string>
+    <string name="resert">ЕЩЕ РАЗ!</string>
+    <string name="ask">ЗАДАТЬ ВОПРОС</string>
+    <string name="runa_button">ГАДАНИЕ НА РУНАХ</string>
+    <string name="yes_no_label">Гадание да/нет</string>
+    <string name="dice_label">Бросить кубик</string>
+    <string name="runas_label">Гадание на рунах</string>
+    <string name="irst_label">Гадания</string>
+</resources>

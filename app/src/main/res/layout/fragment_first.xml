@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FirstFragment">
+
+    <ImageView
+        android:id="@+id/pic_dice"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="@dimen/pic_margin"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_button"
+        app:layout_constraintEnd_toStartOf="@+id/dice_button"
+        app:layout_constraintTop_toTopOf="@+id/dice_button"
+        app:srcCompat="@drawable/dice_5" />
+
+    <ImageView
+        android:id="@+id/pic_yes_no"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/yes_no_button"
+        app:layout_constraintEnd_toEndOf="@+id/pic_dice"
+        app:layout_constraintStart_toStartOf="@+id/pic_dice"
+        app:layout_constraintTop_toTopOf="@+id/yes_no_button"
+        app:srcCompat="@drawable/ic_yes_no" />
+
+    <ImageView
+        android:id="@+id/pic_runa"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/runa_button"
+        app:layout_constraintEnd_toEndOf="@+id/pic_yes_no"
+        app:layout_constraintStart_toStartOf="@+id/pic_yes_no"
+        app:layout_constraintTop_toTopOf="@+id/runa_button"
+        app:srcCompat="@drawable/ic_runa_pic" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/yes_no_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="false"
+        android:contentDescription="@string/first_button"
+        android:text="@string/yes_no"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintEnd_toEndOf="@+id/dice_button"
+        app:layout_constraintStart_toStartOf="@+id/dice_button"
+        app:layout_constraintTop_toBottomOf="@+id/dice_button" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dice_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_dice_button"
+        android:checkable="false"
+        android:contentDescription="@string/first_button"
+        android:text="@string/dice"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/pic_dice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/runa_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="false"
+        android:contentDescription="@string/first_button"
+        android:text="@string/runa_button"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintEnd_toEndOf="@+id/yes_no_button"
+        app:layout_constraintStart_toStartOf="@+id/yes_no_button"
+        app:layout_constraintTop_toBottomOf="@+id/yes_no_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

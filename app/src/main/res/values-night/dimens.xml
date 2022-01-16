@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="margin_image_dice">150dp</dimen>
+    <dimen name="margin_dice_button">80dp</dimen>
+    <dimen name="text_size">36sp</dimen>
+    <dimen name="pic_margin">40dp</dimen>
+    <dimen name="runa_margin">250dp</dimen>
+</resources>

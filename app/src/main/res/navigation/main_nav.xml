@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.yesno.FirstFragment"
+        android:label="@string/first_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_firstFragment_to_yesNoFragment"
+            app:destination="@id/yesNoFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_diceFragment"
+            app:destination="@id/diceFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_runaFragment"
+            app:destination="@id/runaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yesNoFragment"
+        android:name="com.example.yesno.YesNoFragment"
+        android:label="@string/yes_no_label"
+        tools:layout="@layout/fragment_yes_no" />
+    <fragment
+        android:id="@+id/diceFragment"
+        android:name="com.example.yesno.DiceFragment"
+        android:label="@string/dice_label" />
+    <fragment
+        android:id="@+id/runaFragment"
+        android:name="com.example.yesno.RunaFragment"
+        android:label="@string/runas_label"
+        tools:layout="@layout/fragment_runa" />
+</navigation>
